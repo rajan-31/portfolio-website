@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-const MobileNav = ({ listNavItems, listNavLinks, navOpen }) => {
+const MobileNav = ({ listNavItems, listNavLinks, navOpen, closeNav }) => {
 	return (
 		<div
-			className={`w-screen z-10 fixed 
+			className={`w-full z-10 fixed 
             ${navOpen ? 'display:flex' : 'hidden'} 
             flex-row bg-cyan-500 rounded-b-lg md:hidden`}
 		>
@@ -18,7 +18,10 @@ const MobileNav = ({ listNavItems, listNavLinks, navOpen }) => {
 						}`}
 					>
 						<Link href={listNavLinks[index]}>
-							<a className='block py-2 px-7 hover:bg-gray-200/25 transition-all delay-75 transform'>
+							<a
+								className='block py-2 px-7 hover:bg-gray-200/25 transition duration-200 ease-out hover:ease-in'
+								onClick={closeNav}
+							>
 								{item}
 							</a>
 						</Link>

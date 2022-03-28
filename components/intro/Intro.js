@@ -4,7 +4,7 @@ const Intro = () => (
 	<div className='py-20'>
 		<div className='grid grid-cols-7 gap-4'>
 			<div className='sm:col-span-4 col-span-7'>
-				<div className='text-4xl mb-8 font-bold'>
+				<div className='text-4xl mb-8 font-bold text-center sm:text-left'>
 					Hey, I'm <span className=''>Rajan</span>.
 				</div>
 
@@ -16,8 +16,8 @@ const Intro = () => (
 				</div>
 			</div>
 
-			<div className='col-span-7 sm:col-span-3 row-start-1 sm:row-start-auto'>
-				{<MyImage />}
+			<div className='col-span-7 sm:col-span-3 row-start-1 sm:row-start-auto mx-auto'>
+				<MyImage />
 			</div>
 		</div>
 	</div>

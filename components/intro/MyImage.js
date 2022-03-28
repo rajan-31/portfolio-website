@@ -8,7 +8,7 @@ const MyImage = () => (
 		height={256}
 		alt='My Image'
 		quality={100}
-		className='rounded-full'
+		className='rounded-full '
 	/>
 )
 
