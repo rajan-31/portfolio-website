@@ -6,8 +6,8 @@ const List = ({ listItems }) => {
 			{listItems.map((item, index) => (
 				<ListItem
 					key={index}
+					id={item.id}
 					title={item.title}
-					link={item.link}
 					date={item.date}
 				/>
 			))}

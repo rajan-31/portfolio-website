@@ -2,7 +2,19 @@ import Head from 'next/head'
 import Description from '../components/Description'
 import Heading from '../components/Heading'
 
-export default function Contact() {
+import { getSortedArticlesData } from '../lib/articles'
+import List from '../components/articles/List'
+
+export async function getStaticProps() {
+	const allArticlesData = getSortedArticlesData()
+	return {
+		props: {
+			allArticlesData,
+		},
+	}
+}
+
+export default function Articles({ allArticlesData }) {
 	return (
 		<div className='responsive-width'>
 			<Head>
@@ -14,6 +26,8 @@ export default function Contact() {
 
 			<Heading title='Articles' />
 			<Description />
+
+			<List listItems={allArticlesData} />
 		</div>
 	)
 }

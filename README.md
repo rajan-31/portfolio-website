@@ -18,3 +18,11 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+---
+
+Icons used
+
+<a href="https://www.flaticon.com/free-icons/article" title="article icons">Article icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/web-development" title="web-development icons">Web-development icons created by surang - Flaticon</a>

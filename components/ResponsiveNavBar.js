@@ -19,23 +19,38 @@ const ResponsiveNavBar = () => {
 	const listNavItems = ['About', 'Articles', 'Projects']
 	const listNavLinks = ['/about', '/articles', '/projects']
 	const listNavIcons = [
-		<ImProfile className='inline text-xl' />,
-		<RiArticleLine className='inline text-2xl' />,
-		<FaLaptopCode className='inline text-2xl' />,
+		<img
+			className='inline-block'
+			// height={23}
+			width={28}
+			src='/images/cv.png'
+		/>,
+		<img
+			className='inline-block'
+			// height={23}
+			width={28}
+			src='/images/article.png'
+		/>,
+		<img
+			className='inline-block'
+			// height={23}
+			width={28}
+			src='/images/code.png'
+		/>,
 	]
 
 	return (
 		<>
 			<div
-				className={`w-auto py-4 bg-cyan-500 drop-shadow-lg 
+				className={`w-auto py-3 bg-cyan-600 drop-shadow-lg 
                 ${navOpen ? '' : 'rounded-b-lg'}
                 z-50 sticky top-0
                 `}
 			>
-				<div className='flex justify-between text-xl responsive-width'>
+				<div className='flex justify-between items-center text-xl responsive-width'>
 					<div className='text-xl md:text-2xl'>
 						<Link href='/'>
-							<a>
+							<a className='inline-block'>
 								&#60;
 								<span className='text-rose-800'>Rajan</span>
 								<span className='hidden md:inline'> Khade</span>
@@ -44,37 +59,46 @@ const ResponsiveNavBar = () => {
 						</Link>
 					</div>
 
-					<div className='md:flex justify-between hidden'>
+					<div className='md:flex md:flex-row md:items-center md:justify-between hidden'>
 						{listNavItems.map((item, index) => (
-							<div key={index} className='mx-3'>
+							<div key={index} className='mx-3 self-center'>
 								<Link href={listNavLinks[index]}>
-									<a className='px-2 py-2 rounded-lg transition-all duration-300 hover:bg-black/10 active:hover:bg-black/30 align-middle'>
-										{listNavIcons[index]} {item}
+									<a className='px-2 py-2 rounded-lg transition-all duration-300 hover:bg-black/10 active:hover:bg-black/30 flex flex-row align-middle'>
+										<div className=''>
+											{listNavIcons[index]}
+										</div>
+										<div className='self-center'>
+											{item}
+										</div>
 									</a>
 								</Link>
 							</div>
 						))}
 					</div>
 
-					<div className='flex flex-row'>
-						<Image
-							src='/white_sun.svg'
-							alt='&#8413;'
-							width={25}
-							height={25}
-						/>
-						<div className='flex-grow mx-1'>
+					<div className='flex flex-row items-center'>
+						<div className=' p-auto'>
+							<img
+								src='/white_sun.svg'
+								alt='&#8413;'
+								width={25}
+								height={25}
+							/>
+						</div>
+						<div className='flex-grow mx-1 '>
 							<Switch />
 						</div>
-						<Image
-							src='/dark_sun.svg'
-							alt='&#x25CF;'
-							width={25}
-							height={25}
-						/>
+						<div className=''>
+							<img
+								src='/dark_sun.svg'
+								alt='&#x25CF;'
+								width={25}
+								height={25}
+							/>
+						</div>
 					</div>
 
-					<div className='md:hidden ml-7 self-center'>
+					<div className='md:hidden ml-7 '>
 						<button
 							onClick={onHamburgerClick}
 							className={`transition duration-300 ${

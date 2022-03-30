@@ -19,7 +19,7 @@ const MobileNav = ({ listNavItems, listNavLinks, navOpen, closeNav }) => {
 					>
 						<Link href={listNavLinks[index]}>
 							<a
-								className='block py-2 px-7 hover:bg-gray-200/25 transition duration-200 ease-out hover:ease-in'
+								className='block py-2 responsive-width hover:bg-gray-200/25 transition duration-200 ease-out hover:ease-in'
 								onClick={closeNav}
 							>
 								{item}

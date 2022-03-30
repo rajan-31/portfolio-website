@@ -3,7 +3,18 @@ import Container from '../components/articles/Container'
 import Intro from '../components/intro/Intro'
 import SocialMedia from '../components/SocialMedia'
 
-export default function Home() {
+import { getSortedArticlesData } from '../lib/articles'
+
+export async function getStaticProps() {
+	const allArticlesData = getSortedArticlesData().slice(0, 5)
+	return {
+		props: {
+			allArticlesData,
+		},
+	}
+}
+
+export default function Home({ allArticlesData }) {
 	return (
 		<div className='responsive-width'>
 			<Head>
@@ -15,7 +26,7 @@ export default function Home() {
 
 			<Intro />
 			<SocialMedia />
-			<Container />
+			<Container allArticlesData={allArticlesData} />
 		</div>
 	)
 }

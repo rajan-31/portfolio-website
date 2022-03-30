@@ -23,5 +23,37 @@
 } */
 
 .responsive-width {
-  @apply w-full px-7 lg:w-[960px] mx-auto
+  @apply w-full px-10 lg:w-[960px] mx-auto
+}
+
+
+html {
+  scroll-padding-top: 65px;
+}
+body {
+  height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5bdc5;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
 }
