@@ -26,7 +26,7 @@ const Intro = () => (
 					Hey, I&apos;m <span className=''>Rajan</span>.
 				</div>
 
-				<div className='text-xl sm:text-2xl text-justify md:pr-10'>
+				<div className='text-xl text-justify md:pr-10'>
 					I&apos;m an undergraduate Information Technology Engineer. I love to explore new technologies and contribute to open-source projects. I write articles to teach new and emerging technologies. This website is my portfolio of learnings and projects.
 				</div>
 			</div>
