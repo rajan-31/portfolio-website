@@ -19,19 +19,19 @@ const ResponsiveNavBar = () => {
 	const listNavIcons = ['/images/cv.png', '/images/article.png', '/images/code.png']
 
 	return (
-		<>
+		<div className='sticky top-0 z-20'>
 			<div
 				className={`w-auto py-3 bg-slate-200 dark:bg-zinc-800 dark:text-white/80 drop-shadow-lg 
                 ${navOpen ? '' : 'rounded-b-lg'}
-                z-50 sticky top-0
+                z-50
                 `}
 			>
 				<div className='flex justify-between items-center text-xl responsive-width'>
 					<div className=' hover:bg-black/10 active:hover:bg-black/30 dark:hover:bg-white/10  rounded-lg py-2 px-2'>
 						<Link href='/'>
-							<a className='inline-block'>
+							<a className='inline-block' onClick={() => setNavOpen(false)}>
 								&#60;
-								<span className='text-rose-800'>Rajan</span>
+								<span className='text-rose-800 dark:text-red-700'>Rajan</span>
 								<span className='hidden md:inline'> Khade</span>
 								<span className='text-stone-500'>/</span>&#62;
 							</a>
@@ -94,7 +94,7 @@ const ResponsiveNavBar = () => {
 				navOpen={navOpen}
 				closeNav={onHamburgerClick}
 			/>
-		</>
+		</div>
 	)
 }
 

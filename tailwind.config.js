@@ -18,9 +18,9 @@ module.exports = {
 				'rk-orange': '#E94D35',
 			},
 			minHeight: {
-				footer1: 'calc(100vh - 340px)',
-				footer2: 'calc(100vh - 310px)',
-				footer3: 'calc(100vh - 310px)',
+				// footer1: 'calc(100vh - 339px)',
+				// footer2: 'calc(100vh - 310px)',
+				// footer3: 'calc(100vh - 310px)',
 			},
 			width: {
 				customGlobal: '960px',

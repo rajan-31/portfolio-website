@@ -20,21 +20,18 @@ const Intro = () => (
 				<MyImage />
 			</div>
 		</div> */}
-		<div className='flex flex-row'>
+		<div className='flex md:flex-row flex-col-reverse md:justify-between'>
 			<div className=''>
-				<div className='text-5xl mb-8 font-bold text-center sm:text-left'>
+				<div className='text-4xl sm:text-5xl mb-8 font-bold text-center md:text-left'>
 					Hey, I&apos;m <span className=''>Rajan</span>.
 				</div>
 
-				<div className='text-2xl text-justify sm:pr-7'>
-					There are many variations of passages of Lorem Ipsum
-					available, but the majority have suffered alteration in some
-					form, by injected humour, or randomised words which don&apos;t
-					look even slightly believable.
+				<div className='text-xl sm:text-2xl text-justify md:pr-10'>
+					I&apos;m an undergraduate Information Technology Engineer. I love to explore new technologies and contribute to open-source projects. I write articles to teach new and emerging technologies. This website is my portfolio of learnings and projects.
 				</div>
 			</div>
 
-			<div className='min-w-fit
+			<div className='min-w-fit self-center
 			 drop-shadow-md'>
 				<MyImage />
 			</div>

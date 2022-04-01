@@ -3,7 +3,7 @@ import Link from 'next/link'
 const MobileNav = ({ listNavItems, listNavLinks, navOpen, closeNav }) => {
 	return (
 		<div
-			className={`w-full z-10 fixed 
+			className={`w-full z-10 
             ${navOpen ? 'display:flex' : 'hidden'} 
             flex-row bg-slate-200 dark:bg-zinc-800 dark:text-white/80 rounded-b-lg md:hidden`}
 		>
