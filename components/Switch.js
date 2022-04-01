@@ -32,13 +32,13 @@ function Switch() {
 
 	return (
 		<>
-			<label htmlFor='toggle-switch' className='align-middle'>
+			<label htmlFor='toggle-switch' className=''>
 				<input
 					checked={darkTheme}
 					onChange={changeTheme}
 					type='checkbox'
 					id='toggle-switch'
-					className='cursor-pointer h-6 w-12 rounded-full appearance-none bg-gray-500  border-neon checked:bg-black transition duration-200 relative align-middle'
+					className='cursor-pointer h-6 w-12 rounded-full appearance-none bg-gray-400  border-neon checked:bg-gray-700 transition duration-200 relative align-middle'
 				/>
 			</label>
 		</>

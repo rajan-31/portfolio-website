@@ -40,7 +40,7 @@ export default function Article({ articleData }) {
 					<div className='text-base mt-2 mb-16 text-center'>
 						<Date
 							dateString={articleData.date}
-							formatType='dd LLLL, yyyy'
+							formatType='d LLLL, yyyy'
 						/>
 					</div>
 

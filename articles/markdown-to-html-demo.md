@@ -1,5 +1,5 @@
 ---
-title: 'Markdown Cheat Sheet'
+title: 'Markdown to HTML Demo'
 date: '2021-02-01'
 ---
 
@@ -42,7 +42,7 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ### Code
 
-These elements extend the basic syntax by adding additional features. These elements extend the basic syntax by adding additional features. It's `code` boys. Not all Markdown applications support these elements. Not all Markdown applications support these elements.
+These elements extend the basic syntax by adding additional features. These elements extend the basic syntax by adding additional features. It's `npm run dev` boys. Not all Markdown applications support these elements. Not all Markdown applications support these elements.
 
 ### Horizontal Rule
 
@@ -83,6 +83,8 @@ Here's a sentence 2 with a footnote. [^2]
 
 ### Fenced Code Block
 
+<filename>data/fetchedUser_data_from_api.json</filename>
+
 ```json
 {
   "firstName": "Johnddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
@@ -94,13 +96,32 @@ Here's a sentence 2 with a footnote. [^2]
 JS code
 
 ```js
-function sum(a, b) {
-  return a+b;
+import { something } from 'that-thing';
+
+// Not sure what this code does
+
+let index = 123;
+const secret = 'my secret' + "her secret";
+
+function find_thatThing(index, secret) {
+  var temp = something.find(index, secret);
+
+  temp.map((item, i) => {
+    if(item.active === true) {
+      index+=item.currentIndex;
+      console.log(`He did it :), for ${index}.`)
+    } else {
+      break;
+    }
+  });
 }
 
-const sum = (a, b) => {
-  return a+b;
-}
+/* function forWhat() {
+  console.log("IDK");
+} */
+
+export default find_thatThing;
+
 ```
 
 

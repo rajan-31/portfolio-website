@@ -4,11 +4,12 @@ const MyImage = () => (
 	<Image
 		priority='true'
 		src='/author.jpg'
-		width={256}
-		height={256}
-		alt='My Image'
+		width={300}
+		height={300}
+		alt='Me'
 		quality={100}
-		className='rounded-full '
+		// layout='fixed'
+		className='rounded-lg '
 	/>
 )
 

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
 	AiFillGithub,
 	AiFillLinkedin,
@@ -7,29 +8,33 @@ import {
 const SocialMedia = () => {
 	const listSocialMedia = [
 		{
-			link: 'https://www.github.com/rajan-31',
-			icon: <AiFillGithub />,
-		},
-		{
+			name: 'Linkedin',
 			link: 'https://www.linkedin.com/in/rajan-khade',
-			icon: <AiFillLinkedin />,
+			icon: '/images/linkedin.png',
 		},
 		{
+			name: 'GitHub',
+			link: 'https://www.github.com/rajan-31',
+			icon: '/images/github.png'
+		},
+		{
+			name: 'Twitter',
 			link: 'https://twitter.com/Rajan_khade',
-			icon: <AiFillTwitterCircle />,
+			icon: '/images/twitter.png',
 		},
 	]
 
 	return (
-		<div className='rounded-lg bg-yellow-600/80 p-1 text-black text-center text-5xl flex flex-row justify-around'>
+		<div className='rounded-lg bg-blue-100 dark:bg-slate-600 p-2 text-black text-center text-5xl flex flex-row justify-around drop-shadow-lg'>
 			{listSocialMedia.map((item, index) => (
 				<a
 					key={index}
 					href={item.link}
 					target='_blank'
-					className='hover:bg-black/20 p-2 rounded-full transition duration-200 ease-out hover:ease-in'
+					rel='noreferrer'
+					className='hover:bg-blue-200 dark:hover:bg-white/10 p-1.5 rounded-2xl transition duration-200 ease-out hover:ease-in flex flex-row items-center'
 				>
-					{item.icon}
+					<Image src={item.icon} width={30} height={30} alt={item.name} />
 				</a>
 			))}
 		</div>

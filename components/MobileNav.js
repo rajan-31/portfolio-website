@@ -5,7 +5,7 @@ const MobileNav = ({ listNavItems, listNavLinks, navOpen, closeNav }) => {
 		<div
 			className={`w-full z-10 fixed 
             ${navOpen ? 'display:flex' : 'hidden'} 
-            flex-row bg-cyan-500 rounded-b-lg md:hidden`}
+            flex-row bg-slate-200 dark:bg-zinc-800 dark:text-white/80 rounded-b-lg md:hidden`}
 		>
 			<div className='grow'>
 				{listNavItems.map((item, index) => (
@@ -14,12 +14,12 @@ const MobileNav = ({ listNavItems, listNavLinks, navOpen, closeNav }) => {
 						className={`text-xl ${
 							index === listNavItems.length - 1
 								? ''
-								: 'border-b border-slate-500/50'
+							: 'border-b border-slate-500/10'
 						}`}
 					>
 						<Link href={listNavLinks[index]}>
 							<a
-								className='block py-2 responsive-width hover:bg-gray-200/25 transition duration-200 ease-out hover:ease-in'
+								className='block py-2 responsive-width hover:bg-slate-300/50 dark:hover:bg-zinc-900/50 transition duration-200 ease-out hover:ease-in'
 								onClick={closeNav}
 							>
 								{item}

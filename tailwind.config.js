@@ -7,14 +7,25 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				'rk-cyan': '#069D98',
+				'rk-green': '#96CC45',
+				'rk-gray': '#B0ABAD',
+				'rk-violet': '#8F5CDB',
+				'rk-pink': '#FC6876',
+				'rk-yellow': '#CCB400',
+				'rk-blue': '#4f84a6',
+				'rk-orange': '#E94D35',
+			},
 			minHeight: {
-				footer1: 'calc(100vh - 320px)',
-				footer2: 'calc(100vh - 294px)',
-				footer3: 'calc(100vh - 311px)',
+				footer1: 'calc(100vh - 340px)',
+				footer2: 'calc(100vh - 310px)',
+				footer3: 'calc(100vh - 310px)',
 			},
 			width: {
 				customGlobal: '960px',
 			},
+
 		},
 		screens: {
 			'footer-break': '522px',

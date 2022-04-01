@@ -4,10 +4,10 @@ import ResponsiveNavBar from './ResponsiveNavBar'
 export default function Layout({ children }) {
 	return (
 		<div>
-			<div className='dark:bg-black/80 h-full w-auto'>
+			<div className='bg-neutral-100/10 dark:bg-neutral-700 h-full w-auto'>
 				<ResponsiveNavBar />
 
-				<main className='dark:text-gray-100 relative min-h-footer1 footer-break:min-h-footer2 md:min-h-footer3'>
+				<main className='dark:text-zinc-200 relative min-h-footer1 footer-break:min-h-footer2 md:min-h-footer3'>
 					{children}
 				</main>
 				<Footer />
