@@ -22,7 +22,7 @@ const Intro = () => (
 		</div> */}
 		<div className='flex md:flex-row flex-col-reverse md:justify-between'>
 			<div className=''>
-				<div className='text-4xl sm:text-5xl mb-8 font-bold text-center md:text-left'>
+				<div className='text-4xl sm:text-5xl mb-8 mt-4 sm:mt-0 font-bold text-center md:text-left'>
 					Hey, I&apos;m <span className=''>Rajan</span>.
 				</div>
 
