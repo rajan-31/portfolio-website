@@ -81,7 +81,7 @@
             @apply table-row align-middle;
         }
         th, td {
-            @apply p-4 align-middle border-l border-black dark:border-gray-500;
+            @apply p-4 align-middle border-l border-black dark:border-gray-500 ;
         }
         td {
             @apply border-t 
@@ -93,9 +93,17 @@
             @apply rounded-bl-lg;
         }
 
-        tbody tr:nth-child(odd) {
-            @apply bg-gray-200/70 dark:bg-black/30;
+        /* for background color otherwise below 2 selectors are not required, for rounded table */
+        thead:first-child tr:first-child th:last-child {
+            @apply rounded-tr-lg;
         }
+        thead:first-child tr:first-child th {
+            @apply bg-gray-200/90 dark:bg-black/30;
+        }
+
+        /* tbody tr:nth-child(odd) {
+            @apply bg-gray-200/70 dark:bg-black/30;
+        } */
 
         hr {
             @apply border mb-3

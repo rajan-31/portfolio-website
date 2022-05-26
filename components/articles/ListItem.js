@@ -6,7 +6,7 @@ const ListItem = ({ title, id, date }) => {
 		<div className='drop-shadow-md'>
 			<Link href={'/articles/' + id}>
 				<a>
-					<div className='text-lg my-[8px] py-3 px-6 rounded-lg bg-violet-100  hover:bg-violet-200/90 dark:bg-neutral-600 dark:hover:bg-neutral-600/70  flex flex-row justify-between'>
+					<div className='text-lg my-[8px] py-3 px-6 rounded-lg bg-violet-100  hover:bg-violet-200/90 dark:bg-stone-600 dark:hover:bg-stone-600/90 flex flex-row justify-between'>
 						<div className='text-black dark:text-zinc-100 overflow-hidden'>
 							{title}
 						</div>
