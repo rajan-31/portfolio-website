@@ -27,9 +27,9 @@ const ResponsiveNavBar = () => {
                 `}
 			>
 				<div className='flex justify-between items-center text-xl responsive-width'>
-					<div className=' hover:bg-black/10 active:hover:bg-black/30 dark:hover:bg-white/10  rounded-lg py-2 px-2'>
+					<div className=' hover:bg-black/10 active:hover:bg-black/30 dark:hover:bg-white/10  rounded-lg'>
 						<Link href='/'>
-							<a className='inline-block' onClick={() => setNavOpen(false)}>
+							<a className='inline-block py-2 px-2' onClick={() => setNavOpen(false)}>
 								&#60;
 								<span className='text-rose-800 dark:text-red-700'>Rajan</span>
 								<span className='hidden md:inline'> Khade</span>
