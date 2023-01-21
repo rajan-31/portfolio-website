@@ -25,7 +25,9 @@ module.exports = {
 			width: {
 				customGlobal: '960px',
 			},
-
+			screens: {
+				lg: '1061px',
+			},
 		},
 		screens: {
 			'footer-break': '522px',

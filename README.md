@@ -21,8 +21,16 @@ To learn more about Next.js, take a look at the following resources:
 
 ---
 
+Improvements planned
+
+- Add comments section for articles using https://github.com/giscus/giscus
+
+---
+
 Icons used
 
 <a href="https://www.flaticon.com/free-icons/article" title="article icons">Article icons created by Freepik - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/web-development" title="web-development icons">Web-development icons created by surang - Flaticon</a>
+
+Index page image (disco_dingo-675x1200.png) is taken from [https://www.reddit.com/r/Art/comments/ascian/disco_dingo_digital_1200_x_675_px/](https://www.reddit.com/r/Art/comments/ascian/disco_dingo_digital_1200_x_675_px/)

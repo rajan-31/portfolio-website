@@ -1,5 +1,5 @@
 ---
-title: 'Markdown to HTML Demo'
+title: 'Markdown to HTML Demo Article'
 date: '2022-04-02'
 ---
 
@@ -55,8 +55,6 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 ### Image
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-![alt text](https://assets.weforum.org/community/image/7TIt0OZ7hNUP1TNJrHHQOCriP9rSR4d9toQR7EB2gU8.jpg)
 
 ## Extended Syntax
 

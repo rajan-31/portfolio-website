@@ -3,13 +3,13 @@ import Image from 'next/image'
 const MyImage = () => (
 	<Image
 		priority='true'
-		src='/author.jpg'
-		width={300}
-		height={300}
-		alt='Me'
+		src='/disco_dingo.png'
+		width={400}
+		height={304}
+		alt='Disco Dingo'
 		quality={100}
 		// layout='fixed'
-		className='rounded-lg '
+		className='rounded-lg pointer-events-none'
 	/>
 )
 

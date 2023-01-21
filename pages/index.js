@@ -1,20 +1,24 @@
 import Head from 'next/head'
-import Container from '../components/articles/Container'
 import Intro from '../components/intro/Intro'
 import SocialMedia from '../components/SocialMedia'
+import { default as ArticlesContainer } from '../components/articles/Container'
+import { default as ProjectsContainer } from '../components/projects/Container'
 
 import { getSortedArticlesData } from '../lib/articles'
+import { getProjectsData } from '../lib/projects'
 
 export async function getStaticProps() {
 	const allArticlesData = getSortedArticlesData().slice(0, 5)
+	const allProjectsData = getProjectsData().slice(0, 6)
 	return {
 		props: {
 			allArticlesData,
+			allProjectsData,
 		},
 	}
 }
 
-export default function Home({ allArticlesData }) {
+export default function Home({ allArticlesData, allProjectsData }) {
 	return (
 		<div className='responsive-width'>
 			<Head>
@@ -26,7 +30,8 @@ export default function Home({ allArticlesData }) {
 
 			<Intro />
 			<SocialMedia />
-			<Container allArticlesData={allArticlesData} />
+			<ArticlesContainer allArticlesData={allArticlesData} />
+			<ProjectsContainer allProjectsData={allProjectsData} />
 		</div>
 	)
 }

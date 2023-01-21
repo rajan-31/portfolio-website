@@ -1,6 +1,19 @@
 import Head from 'next/head'
 
-export default function Contact() {
+import Heading from '../components/Heading'
+import List from '../components/projects/List'
+import { getProjectsData } from '../lib/projects'
+
+export async function getStaticProps() {
+	const projectsList = getProjectsData()
+	return {
+		props: {
+			projectsList,
+		},
+	}
+}
+
+export default function Projects({ projectsList }) {
 	return (
 		<div className='responsive-width'>
 			<Head>
@@ -10,9 +23,9 @@ export default function Contact() {
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 			</Head>
 
-			<h1 className='text-xl text-center mt-10'>
-				Projects section not yet added...
-			</h1>
+			<Heading title='Projects' />
+
+			<List projectsList={projectsList} />
 		</div>
 	)
 }

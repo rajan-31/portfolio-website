@@ -9,11 +9,11 @@ function Switch() {
 			(!('theme' in localStorage) &&
 				window.matchMedia('(prefers-color-scheme: dark)').matches)
 		) {
-			document.body.classList.add('dark')
+			document.documentElement.classList.add('dark')
 			localStorage.setItem('theme', 'dark')
 			setDarkTheme(true)
 		} else {
-			document.body.classList.remove('dark')
+			document.documentElement.classList.remove('dark')
 			localStorage.setItem('theme', '')
 			setDarkTheme(false)
 		}
@@ -22,10 +22,10 @@ function Switch() {
 	const changeTheme = () => {
 		setDarkTheme(!darkTheme)
 		if (!darkTheme) {
-			document.body.classList.add('dark')
+			document.documentElement.classList.add('dark')
 			localStorage.setItem('theme', 'dark')
 		} else {
-			document.body.classList.remove('dark')
+			document.documentElement.classList.remove('dark')
 			localStorage.setItem('theme', '')
 		}
 	}

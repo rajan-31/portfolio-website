@@ -1,9 +1,4 @@
 import Image from 'next/image'
-import {
-	AiFillGithub,
-	AiFillLinkedin,
-	AiFillTwitterCircle,
-} from 'react-icons/ai'
 
 const SocialMedia = () => {
 	const listSocialMedia = [
@@ -15,7 +10,7 @@ const SocialMedia = () => {
 		{
 			name: 'GitHub',
 			link: 'https://www.github.com/rajan-31',
-			icon: '/images/github.png'
+			icon: '/images/github.png',
 		},
 		{
 			name: 'Twitter',
@@ -34,7 +29,12 @@ const SocialMedia = () => {
 					rel='noreferrer'
 					className='hover:bg-blue-200 dark:hover:bg-white/10 p-3.5 rounded-md transition duration-200 ease-out hover:ease-in flex flex-row items-center'
 				>
-					<Image src={item.icon} width={30} height={30} alt={item.name} />
+					<Image
+						src={item.icon}
+						width={30}
+						height={30}
+						alt={item.name}
+					/>
 				</a>
 			))}
 		</div>

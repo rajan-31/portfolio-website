@@ -1,0 +1,10 @@
+[
+	{
+		"year": 2021,
+		"name": "Automated Exam Proctoring",
+		"desc": "A ML based system to keep watch on exam candidates through webcam and show observations in admin panel.",
+		"article": "",
+		"srcCode": "https://github.com/rajan-31/automated-exam-proctoring",
+		"demo": ""
+	}
+]
