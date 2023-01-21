@@ -18,11 +18,11 @@ export default function About() {
 			<div className='flex md:flex-row flex-col-reverse md:justify-between'>
 				<div className=''>
 					<div className='text-xl text-justify md:pr-10'>
-						I'm an undergraduate information technology engineer. I
-						love to explore new technologies and contribute to
-						open-source projects. I write articles to share my
-						knowledge and experience. This website is my portfolio
-						of learning and projects.
+						I&apos;m an undergraduate information technology
+						engineer. I love to explore new technologies and
+						contribute to open-source projects. I write articles to
+						share my knowledge and experience. This website is my
+						portfolio of learning and projects.
 					</div>
 				</div>
 
