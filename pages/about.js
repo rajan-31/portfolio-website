@@ -24,6 +24,10 @@ export default function About() {
 						share my knowledge and experience. This website is my
 						portfolio of learning and projects.
 					</div>
+					<div>&nbsp;</div>
+					<div className='text-lg text-gray-500 dark:text-gray-400'>
+						To Be Continued...
+					</div>
 				</div>
 
 				<div
