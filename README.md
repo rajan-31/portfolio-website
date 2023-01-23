@@ -21,6 +21,11 @@ To learn more about Next.js, take a look at the following resources:
 
 ---
 
+Fix
+
+- heading link icon is pseudo elt, use options in "rehypeAutolinkHeadings" markdown plugin and add it to span elt
+    https://github.com/rehypejs/rehype-autolink-headings#optionscontent
+
 Improvements planned
 
 - Add comments section for articles using https://github.com/giscus/giscus
