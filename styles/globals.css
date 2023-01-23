@@ -27,10 +27,13 @@
 }
 
 
+/* 
 html {
-  /* @apply scroll-p-[67px]; */
-  /* scroll-padding-top: 75px; */
-}
+  @apply scroll-p-[67px];
+  scroll-padding-top: 75px;
+} 
+*/
+
 body {
   height: 100vh;
 }

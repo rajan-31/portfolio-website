@@ -132,7 +132,7 @@
             }
         }
 
-        h1:hover , h1:hover, h2:hover, h3:hover  {
+        h1:hover , h2:hover, h3:hover  {
             .icon::before {
                 @apply visible
             }
@@ -146,8 +146,13 @@
             @apply bg-neutral-900 text-white/80 text-[16px] block break-words rounded-t-lg px-8 pt-2 pb-5 -mb-5;
         }
 
-        .hljs {
-            /* background: #363b46; */
+        /* .hljs {
+            background: #363b46;
+        } */
+
+        /* to fix scroll issue due to fixed navbar */
+        h1, h2, h3, sup > a {
+            scroll-margin-top: 67px;
         }
 	}
 }
