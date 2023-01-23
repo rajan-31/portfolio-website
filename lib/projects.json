@@ -10,14 +10,14 @@
 	{
 		"year": 2022,
 		"name": "Real Estate Transactions",
-		"desc": "Blockchain based web framework for real estate transactions",
+		"desc": "Blockchain based web framework for real estate transactions, using Hyperledger Fabric",
 		"article": "https://doi.org/10.1007/978-981-19-3035-5_44",
 		"srcCode": "https://github.com/rajan-31/HF-Real_Estate_Tx",
 		"demo": ""
 	},
 	{
 		"year": 2022,
-		"name": "CrowdFunding Dapp",
+		"name": "Crowd Funding Dapp",
 		"desc": "Ethereum based decentralized crowd funding web app",
 		"article": "",
 		"srcCode": "https://github.com/rajan-31/B5-Triology",
@@ -34,7 +34,7 @@
 	{
 		"year": 2021,
 		"name": "Carbon Footprint Indicator",
-		"desc": "Chrome extension to view carbon footprint of some products",
+		"desc": "Chrome extension to view carbon footprint of products",
 		"article": "",
 		"srcCode": "https://github.com/rajan-31/Carbon-Footprint-Indicator",
 		"demo": ""
@@ -42,7 +42,7 @@
 	{
 		"year": 2021,
 		"name": "Movie Recommender",
-		"desc": "A simple movie recommendation system using Machine Learning",
+		"desc": "A movie recommendation system using Machine Learning",
 		"article": "",
 		"srcCode": "https://github.com/rajan-31/Movie-Recommender",
 		"demo": ""
