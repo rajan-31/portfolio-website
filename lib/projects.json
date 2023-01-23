@@ -1,10 +1,50 @@
 [
 	{
+		"year": 2022,
+		"name": "Portfolio Website",
+		"desc": "Source code of this website",
+		"article": "",
+		"srcCode": "https://github.com/rajan-31/portfolio-website",
+		"demo": ""
+	},
+	{
+		"year": 2022,
+		"name": "Real Estate Transactions",
+		"desc": "Blockchain based web framework for real estate transactions",
+		"article": "https://doi.org/10.1007/978-981-19-3035-5_44",
+		"srcCode": "",
+		"demo": ""
+	},
+	{
+		"year": 2022,
+		"name": "CrowdFunding Dapp",
+		"desc": "Ethereum based decentralized crowd funding web app",
+		"article": "",
+		"srcCode": "https://github.com/rajan-31/B5-Triology",
+		"demo": "https://ethereum-crowd-funding.herokuapp.com"
+	},
+	{
 		"year": 2021,
 		"name": "Automated Exam Proctoring",
-		"desc": "A ML based system to keep watch on exam candidates through webcam and show observations in admin panel.",
+		"desc": "A ML based system to keep watch on exam candidates",
 		"article": "",
 		"srcCode": "https://github.com/rajan-31/automated-exam-proctoring",
+		"demo": ""
+	},
+	{
+		"year": 2021,
+		"name": "Carbon Footprint Indicator",
+		"desc": "Chrome extension to view carbon footprint of some products",
+		"article": "",
+		"srcCode": "https://github.com/rajan-31/Carbon-Footprint-Indicator",
+		"demo": ""
+	},
+	{
+		"year": 2021,
+		"name": "Movie Recommender",
+		"desc": "A simple movie recommendation system using Machine Learning",
+		"article": "",
+		"srcCode": "https://github.com/rajan-31/Movie-Recommender",
 		"demo": ""
 	}
 ]
