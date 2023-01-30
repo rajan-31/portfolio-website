@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Date from '../../components/articles/Date'
 import Markdown from '../../components/Markdown'
+import GiscusComments from '../../components/articles/GiscusComments'
+
 import { getAllArticleIds, getArticleData } from '../../lib/articles'
 
 export async function getStaticProps({ params }) {
@@ -45,6 +47,8 @@ export default function Article({ articleData }) {
 					</div>
 
 					<Markdown content={articleData.contentHtml} />
+
+					<GiscusComments />
 				</article>
 			</div>
 		</>

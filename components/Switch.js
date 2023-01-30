@@ -1,23 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useThemeContext } from '../context/theme'
 
 function Switch() {
-	const [darkTheme, setDarkTheme] = useState(false)
-
-	useEffect(() => {
-		if (
-			localStorage.getItem('theme') === 'dark' ||
-			(!('theme' in localStorage) &&
-				window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			document.documentElement.classList.add('dark')
-			localStorage.setItem('theme', 'dark')
-			setDarkTheme(true)
-		} else {
-			document.documentElement.classList.remove('dark')
-			localStorage.setItem('theme', '')
-			setDarkTheme(false)
-		}
-	}, [])
+	const [darkTheme, setDarkTheme] = useThemeContext()
 
 	const changeTheme = () => {
 		setDarkTheme(!darkTheme)
