@@ -1,11 +1,10 @@
-// import 'highlight.js/styles/github-dark-dimmed.css'
-// import 'highlight.js/styles/github.css'
-// import 'highlight.js/styles/atom-one-dark-reasonable.css'
+// import 'highlight.js/styles/base16/silk-light.css'
+// import 'highlight.js/styles/base16/tomorrow.css'
+// import 'highlight.js/styles/base16/github.css'
+// import 'highlight.js/styles/base16/equilibrium-gray-light.css'
 
-// import 'highlight.js/styles/a11y-dark.css'
-// import 'highlight.js/styles/stackoverflow-dark.css'
-// import 'highlight.js/styles/base16/ocean.css'
-import 'highlight.js/styles/base16/materia.css'
+// import 'highlight.js/styles/base16/materia.css'
+// import 'highlight.js/styles/base16/dirtysea.css'
 
 const Markdown = ({ content }) => {
 	return (

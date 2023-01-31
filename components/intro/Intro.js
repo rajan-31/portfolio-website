@@ -1,10 +1,10 @@
 import MyImage from './MyImage'
 
 const Intro = () => (
-	<div className='py-20'>
+	<div className='py-10 md:py-20'>
 		<div className='flex md:flex-row flex-col-reverse md:justify-between'>
 			<div className=''>
-				<div className='text-4xl sm:text-5xl mb-8 mt-4 sm:mt-0 font-bold text-center md:text-left'>
+				<div className='text-3xl sm:text-4xl mb-8 mt-4 sm:mt-0 font-bold text-center md:text-left'>
 					Hey, I&apos;m <span className=''>Rajan</span>.
 				</div>
 
@@ -19,7 +19,7 @@ const Intro = () => (
 
 			<div
 				onContextMenu={(e) => e.preventDefault()}
-				className='min-w-fit self-center
+				className='min-w-fit self-center md:self-start
 			 drop-shadow-md'
 			>
 				<MyImage />

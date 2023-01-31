@@ -16,7 +16,7 @@ export default function About() {
 			<Heading title='About' />
 
 			<div className='flex md:flex-row flex-col-reverse md:justify-between'>
-				<div className=''>
+				<div className='mt-3 md:mt-0'>
 					<div className='text-xl text-justify md:pr-10'>
 						I&apos;m an undergraduate information technology
 						engineer. I love to explore new technologies and

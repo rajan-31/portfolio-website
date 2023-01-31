@@ -64,10 +64,10 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
-| Header      | `Title`       | Here's this   |
-| Paragraph   | Text        | And more      |
-| Header      | `Title`       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Header      | This creates a header     | Here's this   |
+| Paragraph   | A paragraph for long description        | And more      |
+| Header but a biggger one     | `Title`     | Here's this   |
+| Paragraph   | Text        | Another test for paragraph      |
 
 ### Footnote
 
@@ -119,7 +119,6 @@ function find_thatThing(index, secret) {
 } */
 
 export default find_thatThing;
-
 ```
 
 

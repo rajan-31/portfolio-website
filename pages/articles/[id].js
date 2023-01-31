@@ -33,7 +33,7 @@ export default function Article({ articleData }) {
 			</Head>
 			<div className='responsive-width'>
 				<article>
-					<div className='text-5xl md:text-5xl text-center font-semibold mt-10'>
+					<div className='text-2xl sm:text-4xl md:text-5xl text-center font-semibold mt-10'>
 						{articleData.title}
 					</div>
 

@@ -10,7 +10,7 @@ const MobileNav = ({
 }) => {
 	return (
 		<div
-			className={`w-full z-10 
+			className={`w-full z-10 absolute
             ${navOpen ? 'display:flex' : 'hidden'} 
             flex-row bg-slate-200 dark:bg-zinc-800 dark:text-white/80 rounded-b-lg md:hidden`}
 		>

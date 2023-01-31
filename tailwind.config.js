@@ -26,7 +26,7 @@ module.exports = {
 				customGlobal: '960px',
 			},
 			screens: {
-				lg: '1061px',
+				// lg: '1061px',
 			},
 		},
 		screens: {

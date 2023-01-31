@@ -14,10 +14,11 @@ const ResponsiveNavBar = () => {
 	const [activeSection, setActiveSection] = useState(
 		router.pathname.split('/')[1]
 	)
-
+		
+	const currentPath = router.pathname.split('/')[1]
 	useEffect(() => {
-		setActiveSection(router.pathname.split('/')[1])
-	}, [router.pathname.split('/')[1]])
+		setActiveSection(currentPath)
+	}, [currentPath])
 
 	const onHamburgerClick = () => {
 		setNavOpen(!navOpen)

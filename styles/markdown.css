@@ -1,8 +1,11 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
-@tailwind utilities;
+/* @tailwind utilities; */
 
 @layer components {
+    .mdRoot {
+        @apply mb-16;
+    }
 	.mdRoot {
 		h1 {
 			@apply text-5xl mt-2 mb-2 dark:text-orange-400
@@ -21,7 +24,11 @@
 		}
 
         h1, h2 {
-            @apply border-b pb-2
+            @apply border-b border-black/30 dark:border-white/30 pb-2
+        }
+
+        hr {
+            @apply mb-3 border-t border-black/30 dark:border-white/30
         }
 
         :not(sup) > a:not(.data-footnote-backref) {
@@ -33,7 +40,7 @@
         }
 
         blockquote {
-            @apply border border-black/40 rounded-md p-5 my-4 border-l-blue-700/80 border-l-8 dark:border-l-orange-400 bg-stone-50 dark:bg-neutral-600
+            @apply border border-black/30 dark:border-white/30 rounded-md p-4 my-4 border-l-blue-700/80 border-l-8 dark:border-l-orange-400 bg-stone-50 dark:bg-neutral-600
         }
 
         ol {
@@ -53,12 +60,12 @@
         }
 
         li input:checked {
-            @apply dark:bg-orange-400 rounded-sm dark:rounded-lg;
+            
             content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAuMDQxIDE3bC00LjUtNC4zMTkgMS4zOTUtMS40MzUgMy4wOCAyLjkzNyA3LjAyMS03LjE4MyAxLjQyMiAxLjQwOS04LjQxOCA4LjU5MXptLTUuMDQxLTE1Yy0xLjY1NCAwLTMgMS4zNDYtMyAzdjE0YzAgMS42NTQgMS4zNDYgMyAzIDNoMTRjMS42NTQgMCAzLTEuMzQ2IDMtM3YtMTRjMC0xLjY1NC0xLjM0Ni0zLTMtM2gtMTR6bTE5IDN2MTRjMCAyLjc2MS0yLjIzOCA1LTUgNWgtMTRjLTIuNzYyIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzgtNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXoiLz48L3N2Zz4=)
         }
 
         li input:not(:checked) {
-            @apply dark:bg-orange-400 rounded-sm dark:rounded-lg;
+            
             content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNSAyYy0xLjY1NCAwLTMgMS4zNDYtMyAzdjE0YzAgMS42NTQgMS4zNDYgMyAzIDNoMTRjMS42NTQgMCAzLTEuMzQ2IDMtM3YtMTRjMC0xLjY1NC0xLjM0Ni0zLTMtM2gtMTR6bTE5IDN2MTRjMCAyLjc2MS0yLjIzOCA1LTUgNWgtMTRjLTIuNzYyIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzgtNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXoiLz48L3N2Zz4=)
         }
 
@@ -67,12 +74,14 @@
         }
 
         :not(pre)> code {
-            @apply bg-gray-300 p-1 rounded-lg dark:bg-gray-500
+            @apply bg-gray-300 px-1 rounded-lg dark:bg-gray-500 inline-block;
         }
 
         table { 
-            @apply w-full border border-separate rounded-lg border-l-0 border-black dark:border-gray-500;
+            @apply w-full border border-separate rounded-lg border-l-0 border-black/30 dark:border-gray-500/50;
             border-spacing: 0px;
+            overflow-wrap: anywhere;
+            word-break: normal;
         }
         thead {
             @apply align-middle border-separate table-header-group;
@@ -81,7 +90,7 @@
             @apply table-row align-middle;
         }
         th, td {
-            @apply p-4 align-middle border-l border-black dark:border-gray-500 ;
+            @apply p-2 md:p-3 lg:p-4 align-middle border-l border-black/30 dark:border-gray-500/50 ;
         }
         td {
             @apply border-t 
@@ -104,10 +113,6 @@
         /* tbody tr:nth-child(odd) {
             @apply bg-gray-200/70 dark:bg-black/30;
         } */
-
-        hr {
-            @apply border mb-3
-        }
 
         .data-footnote-backref {
             @apply no-underline hover:bg-transparent
@@ -138,21 +143,50 @@
             }
         }
 
-        code {
+        pre code {
             @apply rounded-lg my-2
         }
-
-        filename {
-            @apply bg-neutral-900 text-white/80 text-[16px] block break-words rounded-t-lg px-8 pt-2 pb-5 -mb-5;
-        }
-
-        /* .hljs {
-            background: #363b46;
-        } */
 
         /* to fix scroll issue due to fixed navbar */
         h1, h2, h3, sup > a {
             scroll-margin-top: 67px;
         }
 	}
+
+    .dark .mdRoot {
+        li input:not(:checked) {
+            content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTAuMDQxIDE3bC00LjUtNC4zMTkgMS4zOTUtMS40MzUgMy4wOCAyLjkzNyA3LjAyMS03LjE4MyAxLjQyMiAxLjQwOS04LjQxOCA4LjU5MXptLTUuMDQxLTE1Yy0xLjY1NCAwLTMgMS4zNDYtMyAzdjE0YzAgMS42NTQgMS4zNDYgMyAzIDNoMTRjMS42NTQgMCAzLTEuMzQ2IDMtM3YtMTRjMC0xLjY1NC0xLjM0Ni0zLTMtM2gtMTR6bTE5IDN2MTRjMCAyLjc2MS0yLjIzOCA1LTUgNWgtMTRjLTIuNzYyIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzgtNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXoiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7Ii8+Cjwvc3ZnPg==)
+        }
+        li input:checked {
+            content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTAuMDQxIDE3bC00LjUtNC4zMTkgMS4zOTUtMS40MzUgMy4wOCAyLjkzNyA3LjAyMS03LjE4MyAxLjQyMiAxLjQwOS04LjQxOCA4LjU5MXptLTUuMDQxLTE1Yy0xLjY1NCAwLTMgMS4zNDYtMyAzdjE0YzAgMS42NTQgMS4zNDYgMyAzIDNoMTRjMS42NTQgMCAzLTEuMzQ2IDMtM3YtMTRjMC0xLjY1NC0xLjM0Ni0zLTMtM2gtMTR6bTE5IDN2MTRjMCAyLjc2MS0yLjIzOCA1LTUgNWgtMTRjLTIuNzYyIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzgtNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXoiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7Ii8+Cjwvc3ZnPg==)
+        }
+    }
+
+    /* --------CODE------- */
+
+    .mdRoot {
+        pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#000;background:#e0e0e0}.hljs ::selection,.hljs::selection{background-color:#d0d0d0;color:#000}.hljs-comment{color:#707070}.hljs-tag{color:#202020}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#000}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#840000}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#006565}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#755b00}.hljs-strong{font-weight:700;color:#755b00}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#730073}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#755b00}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#007300}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#000090}.hljs-emphasis{color:#000090;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#755b00}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
+
+        filename {
+            @apply bg-blue-700/80 text-white text-[16px] block break-words rounded-t-lg px-8 pt-2 pb-5 -mb-5;
+        }
+
+        pre code, filename {
+            @apply border border-black/10
+        }
+    }
+
+    .dark .mdRoot {
+        pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#cdd3de;background:#263238}.hljs ::selection,.hljs::selection{background-color:#37474f;color:#cdd3de}.hljs-comment{color:#707880}.hljs-tag{color:#c9ccd3}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#cdd3de}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#ec5f67}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#ea9560}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#fc0}.hljs-strong{font-weight:700;color:#fc0}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#8bd649}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#80cbc4}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#89ddff}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#82aaff}.hljs-emphasis{color:#82aaff;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#ec5f67}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
+
+        filename {
+            @apply bg-neutral-900 text-white/80 text-[16px] block break-words rounded-t-lg px-8 pt-2 pb-5 -mb-5;
+        }
+
+        pre code, filename {
+            @apply border border-black/10  
+        }
+    }
+
+    /* ------------------- */
 }
